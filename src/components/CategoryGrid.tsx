@@ -1,7 +1,7 @@
 import { Category } from '../types'
 import { 
   Utensils, Coffee, ShoppingBag, Wrench, 
-  Cross, Sparkles, Car, Graduation 
+  Cross, Sparkles, Car, GraduationCap 
 } from 'lucide-react'
 
 interface CategoryGridProps {
@@ -18,7 +18,7 @@ const getIconForCategory = (iconName: string) => {
     'Cross': Cross,
     'Sparkles': Sparkles,
     'Car': Car,
-    'Graduation': Graduation
+    'Graduation': GraduationCap  // Fixed: Graduation -> GraduationCap
   }
   
   const IconComponent = iconMap[iconName as keyof typeof iconMap] || Utensils
