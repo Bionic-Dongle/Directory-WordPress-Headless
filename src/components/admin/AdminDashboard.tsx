@@ -1,6 +1,6 @@
 import { ArrowLeft } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { Button } from '@/components/ui/button'
+import { Button } from '../ui/button'
 import Navigation from '../Navigation'
 import Footer from '../Footer'
 

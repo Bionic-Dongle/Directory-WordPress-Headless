@@ -1,5 +1,5 @@
 import { Star, MapPin, Phone, Clock, ExternalLink } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Button } from './ui/button'
 import { Business } from '../types'
 
 interface BusinessCardProps {
