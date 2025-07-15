@@ -1,5 +1,5 @@
 // WordPress REST API Client
-const WORDPRESS_API_URL = import.meta.env.VITE_WORDPRESS_API_URL || 'http://localhost/wp-json'
+const WORDPRESS_API_URL = (import.meta as any).env?.VITE_WORDPRESS_API_URL || 'http://localhost/wp-json'
 
 // Mock data for development (same as original)
 const MOCK_CATEGORIES = [

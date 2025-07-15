@@ -1,3 +1,4 @@
+import React from 'react'
 import { Category } from '../types'
 import { 
   Utensils, Coffee, ShoppingBag, Wrench, 
@@ -18,14 +19,14 @@ const getIconForCategory = (iconName: string) => {
     'Cross': Cross,
     'Sparkles': Sparkles,
     'Car': Car,
-    'Graduation': GraduationCap  // Fixed: Graduation -> GraduationCap
+    'Graduation': GraduationCap
   }
   
   const IconComponent = iconMap[iconName as keyof typeof iconMap] || Utensils
   return IconComponent
 }
 
-export default function CategoryGrid({ categories, onCategorySelect }: CategoryGridProps) {
+function CategoryGrid({ categories, onCategorySelect }: CategoryGridProps) {
   return (
     <div className="mb-12">
       <div className="text-center mb-8">
@@ -54,3 +55,5 @@ export default function CategoryGrid({ categories, onCategorySelect }: CategoryG
     </div>
   )
 }
+
+export default CategoryGrid
