@@ -1,0 +1,36 @@
+{
+  "name": "directory-wordpress-headless",
+  "version": "1.0.0",
+  "description": "Business directory template using WordPress as headless CMS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
+  },
+  "keywords": [
+    "directory",
+    "wordpress",
+    "headless",
+    "nextjs",
+    "business",
+    "local",
+    "cms"
+  ],
+  "author": "Bionic-Dongle",
+  "license": "MIT"
+}
