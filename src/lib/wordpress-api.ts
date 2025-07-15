@@ -174,7 +174,7 @@ export const apiClient = {
       let businesses = wpBusinesses.map(transformWordPressBusiness)
       
       if (filters.featured !== undefined) {
-        businesses = businesses.filter(b => b.featured === filters.featured)
+        businesses = businesses.filter((b: any) => b.featured === filters.featured)
       }
       
       return businesses
@@ -189,7 +189,7 @@ export const apiClient = {
         businesses = businesses.filter(b => b.status === filters.status)
       }
       if (filters.featured !== undefined) {
-        businesses = businesses.filter(b => b.featured === filters.featured)
+        businesses = businesses.filter((b: any) => b.featured === filters.featured)
       }
       
       return businesses
@@ -297,12 +297,12 @@ export const apiClient = {
     return { id, ...business }
   },
 
-  async deleteBusiness(id: string) {
+  async deleteBusiness(_id: string) {
     console.log('Mock: Business deletion received')
     return { success: true }
   },
 
-  async updateBusinessStatus(id: string, status: string) {
+  async updateBusinessStatus(_id: string, _status: string) {
     console.log('Mock: Business status update received')
     return { success: true }
   }

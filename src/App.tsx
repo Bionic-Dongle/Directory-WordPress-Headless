@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
@@ -12,7 +12,7 @@ function FullApp() {
   const [businesses, setBusinesses] = useState<Business[]>([])
   const [categories, setCategories] = useState<Category[]>([])
   const [filteredBusinesses, setFilteredBusinesses] = useState<Business[]>([])
-  const [searchQuery, setSearchQuery] = useState('')
+  const [, setSearchQuery] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('')
   const [loading, setLoading] = useState(true)
 
