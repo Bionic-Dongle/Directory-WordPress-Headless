@@ -1,3 +1,4 @@
+import React from 'react'
 import { Star, MapPin, Phone, Clock, ExternalLink } from 'lucide-react'
 import { Button } from './ui/button'
 import { Business } from '../types'
@@ -8,7 +9,7 @@ interface BusinessCardProps {
 
 export default function BusinessCard({ business }: BusinessCardProps) {
   const renderStars = (rating: number) => {
-    const stars = []
+    const stars: React.ReactElement[] = []
     const fullStars = Math.floor(rating)
     const hasHalfStar = rating % 1 !== 0
     
